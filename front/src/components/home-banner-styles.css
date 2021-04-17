@@ -1,0 +1,33 @@
+.Home-banner-wrap{
+    display: table;
+    width: 100vw;
+    height: 26.73vw;
+    position: relative;
+    background-color: #000;
+}
+
+.Home-banner-img{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.Home-banner-img::after{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url(../assets/img/home-bn@2x.jpg) no-repeat center;
+    background-size: 100% 100%;
+    opacity: 0.4;
+}
+
+.Home-banner-descript{
+    width: 100%;
+    padding: 0 28px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.54px;
+    color: #fff;
+}

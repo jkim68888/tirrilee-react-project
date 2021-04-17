@@ -29,7 +29,6 @@ const Login = ({user,email,password}) => {
       .signInWithEmailAndPassword(form.email, form.password)
       .then((user) => {
         history.push('/home');
-        console.log(user);
       });
   };
 

@@ -1,8 +1,11 @@
 import React from 'react';
+import './bottom-nav.css';
 
 const BottomNav = () => {
     return(
-        <div></div>
+        <div className="Bottom-nav-wrap">
+
+        </div>
     );
 }
 
