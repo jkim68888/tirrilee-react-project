@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import ico from '../../assets/icon-back.png';
+import ico from '../../assets/img/icon-back.png';
 import '../../common-styles.css';
 import './styles.css';
 
@@ -12,8 +12,8 @@ const Id = () => {
             </Link>
             <h1>이메일 주소를 입력해주세요.</h1>
             <p>이메일주소로 로그인 할 수 있습니다.</p>
-            <input/>
-            <Link to="/join/password">
+            <input type="text" placeholder="이메일"/>
+            <Link to="/join/password" className="link">
                 <button type="submit">다음</button>
             </Link>
         </div>
