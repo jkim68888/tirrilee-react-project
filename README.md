@@ -3,13 +3,13 @@
 <img src="https://user-images.githubusercontent.com/75922558/115135736-c1432700-a055-11eb-8efc-d457f32ca9cf.png" width="52" height="52">
 <img src="https://user-images.githubusercontent.com/75922558/115135777-0f582a80-a056-11eb-9e2b-4a37ee6dc96e.png" width="120">
 
-<br>
-
 ## 개요
 
 - CRA 로 리액트 개발환경 구축
 - 리액트 컴포넌트를 JSX 로 작성
 - Firebase Authentication 을 사용하여 이메일/비밀번호를 이용한 로그인 구현
+
+<br>
 
 ## 화면 구현
 ### 1. 회원가입 (3P)
@@ -24,7 +24,7 @@
 
 4-1-1. 등록하기 / 4-1-2. 등록하기_입력완료
 
-
+<br>
 
 ## 기능 구현
 ### (1) 로그인/회원가입 후
