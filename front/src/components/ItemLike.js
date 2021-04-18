@@ -17,8 +17,6 @@ const ItemLike = () => {
             <Swiper
                 spaceBetween={12}
                 slidesPerView={1.5}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
                 >
                 <SwiperSlide>
                     <img src={like} alt="좋아요 버튼" className="like-img"/>

@@ -14,8 +14,6 @@ const MainBanner = () => {
                 slidesPerView={1}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 3000 }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
                 >
                 <SwiperSlide>
                     <p>봄 맞이 세일 실시</p>

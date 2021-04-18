@@ -58,7 +58,7 @@
   justify-content: flex-end;
 }
 
-.Login-bottom-form-wrap li, .default-link{
+.Login-bottom-form-wrap li, .Login-bottom-form-wrap .default-link{
   font-size: 12px;
   color: #3d3d3d;
 }
