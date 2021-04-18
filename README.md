@@ -8,6 +8,8 @@
 - CRA 로 리액트 개발환경 구축
 - 리액트 컴포넌트를 JSX 로 작성
 - Firebase Authentication 을 사용하여 이메일/비밀번호를 이용한 로그인 구현
+- email, password, user를 state 값으로 설정 후 페이지간 데이터 전달 및 새로고침 시 user값 유지되게 설정
+
 
 <br>
 
