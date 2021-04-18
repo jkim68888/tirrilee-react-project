@@ -16,6 +16,27 @@ const Password = () => {
     });
 
     const handleInputChange = (event) => {
+        const message = document.getElementById('validation-message');
+        const next_btn = document.getElementById('next-btn');
+        const pw = document.getElementById('password');
+        const pw_confirm = document.getElementById('password-confirm');
+        
+        message.style.display = 'inline';
+
+        if (pw.value ===  pw_confirm.value) {
+            message.textContent = '비밀번호가 일치합니다.';
+            message.style.color = '#6cd15a';
+            next_btn.style.backgroundColor = '#226bef';
+            next_btn.style.color = '#fff';
+            next_btn.disabled = false;
+        } else {
+            message.textContent = '비밀번호가 일치하지 않습니다.';
+            message.style.color = '#e64841';
+            next_btn.style.backgroundColor = '#eaeaea';
+            next_btn.style.color = '#bfbfbf';
+            next_btn.disabled = true;
+        }
+
         setValues({
             ...form,
             [event.target.name]: event.target.value
@@ -50,10 +71,11 @@ const Password = () => {
             <form onSubmit={handleSubmit}>
                 <h1>패스워드를 입력해주세요.</h1>
                 <p>알파벳+숫자+특수문자 포함 8자 이상입니다.</p>
-                <input type="password" name="password" placeholder="비밀번호" min="8" onChange={handleInputChange}/>
-                <input type="password" name="password-confirm" placeholder="비밀번호 확인" min="8"/>
+                <input type="password" name="password" id="password" placeholder="비밀번호" min="8" onChange={handleInputChange}/>
+                <input type="password" name="password-confirm" id="password-confirm" placeholder="비밀번호 확인" min="8" onChange={handleInputChange}/>
+                <p id="validation-message"></p>
                 <div className="btn-wrap">
-                    <button type="submit" className="next-btn">완료</button>
+                    <button type="submit" disabled={true} id="next-btn">완료</button>
                 </div>
             </form>
         </div>

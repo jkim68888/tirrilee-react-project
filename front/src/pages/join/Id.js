@@ -12,6 +12,25 @@ const Id = () => {
     });
 
     const handleInputChange = (event) => {
+        const message = document.getElementById('validation-message');
+        const next_btn = document.getElementById('next-btn');
+        
+        message.style.display = 'inline';
+
+        if (event.target.value.match(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)) {
+            message.textContent = '올바른 이메일 형식입니다.';
+            message.style.color = '#6cd15a';
+            next_btn.style.backgroundColor = '#226bef';
+            next_btn.style.color = '#fff';
+            next_btn.disabled = false;
+        } else {
+            message.textContent = '올바른 이메일 형식이 아닙니다.';
+            message.style.color = '#e64841';
+            next_btn.style.backgroundColor = '#eaeaea';
+            next_btn.style.color = '#bfbfbf';
+            next_btn.disabled = true;
+        }
+
         setValues({
             ...form,
             [event.target.name]: event.target.value
@@ -35,8 +54,9 @@ const Id = () => {
                 <h1>이메일 주소를 입력해주세요.</h1>
                 <p>이메일주소로 로그인 할 수 있습니다.</p>
                 <input type="text" name="email" placeholder="이메일" onChange={handleInputChange}/>
+                <p id="validation-message"></p>
                 <div className="btn-wrap">
-                    <button type="submit" className="next-btn">다음</button>
+                    <button type="submit" disabled={true} id="next-btn">다음</button>
                 </div>
             </form>
         </div>

@@ -27,7 +27,7 @@ const AddItems = () => {
                 </div>
                 <div className="Add-item-price">
                     <label for="item-price">가격</label>
-                    <input type="text" id="item-price" placeholder="가격 원"/>
+                    <input type="text" id="item-price" placeholder="가격"/>
                 </div>
                 <div className="Add-item-description">
                     <label for="item-descript">상세설명</label>
