@@ -1,6 +1,6 @@
 .Item-new-wrapper{
     width: 100vw;
-    height: 175vw;
+    height: 640px;
     padding: 0 13px;
 }
 
@@ -30,13 +30,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    height: 85%;
+    height: 599px;
 }
 
 .Item-list{
     position: relative;
     width: 47%;
-    height: 50%;
+    height: 266px;
 }
 
 .like-img{
@@ -47,6 +47,10 @@
 .list-img{
     width: 43vw;
     height: 43vw;
+}
+
+.Item-descript{
+    height: 98px;  
 }
 
 .Item-descript h2{
